@@ -1,5 +1,6 @@
-// script.js
-
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('The DOM is fully loaded and parsed');
+document.getElementById('bouton qui fait rien').addEventListener('click', function() {
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => alert('Votre adresse IP est : ' + data.ip))
+        .catch(error => console.error('Erreur:', error));
 });
