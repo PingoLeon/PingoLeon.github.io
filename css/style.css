@@ -24,11 +24,26 @@ header {
 h1 {
     margin: 0;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 7em;
     letter-spacing: 4px;
 }
 
 p {
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1.7em;
+}
+
+.small-line {
+    width: 500px; /* Contrôle la longueur de la ligne */
+    border-top: 5px solid #fff; /* Contrôle l'épaisseur et la couleur de la ligne */
+    margin: auto; /* Centre la ligne */
+    text-align: center;
+}
+
+#centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    text-align: center;
 }
